@@ -38,12 +38,18 @@ let year = carDetails.year
 
 function greeting( obj ) {
   //Code Here
-  
+  let firstName = obj.firstName;
+  let lastName = obj.lastName;
+  let title = obj.title;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+let obj = {
+  firstName: 'Steven',
+  lastName: 'Larsen',
+  title: 'Mr.'
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -89,11 +95,11 @@ let obj1 = {
   carb: 'bread',
   fat: 'butter',
   protein: 'eggs'
-};
-function ingredients(obj1){{
+}
+function ingredients(obj1){
   let carb = obj1.carb;
   let fat = obj1.fat;
-  let protein = obj1.protein}
+  let protein = obj1.protein
   let result = [carb, fat, protein]
   return result
 }
@@ -118,12 +124,13 @@ let numberObj = {
   second: 5000,
   third: 4500
 };
-let low = numberObj.first;
-let med = numberObj.third;
-let high = numberObj.second;
+let first = numberObj.first;
+let third = numberObj.third;
+let second = numberObj.second;
 
-function largeNumbers({low, med, high}){
-
+function largeNumbers(first, second, third){
+  let smallest = Math.min(first, second, third);
+  return smallest
 }
 
 ////////// PROBLEM 6 //////////
@@ -142,6 +149,7 @@ let obj2 = {
 }
 
 function numberGroups(){
+for(i=0; i<obj2.length; i++)
 
 }
 

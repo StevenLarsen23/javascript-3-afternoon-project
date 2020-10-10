@@ -21,7 +21,11 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers = []
+ mixedNumbers.filter((element, index, array) => {
+  return element % 2 === 0;
+ 
+});
 
 
 

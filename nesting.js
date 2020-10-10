@@ -156,10 +156,10 @@ var myCar = {
 */
 
 //Code Here
-function recordCleaner() {
-  for (let i = 0; i < myCar.length; i++){
-    if (myCar[i].accidents[i].atFaultForAccident === true){
-      myCar[i].accidents[i].atFaultForAccident = false;
+function recordCleaner(myCar) {
+  for (let i = 0; i < myCar.accidents.length; i++){
+    if (myCar.accidents[i].atFaultForAccident == true){
+      myCar.accidents[i].atFaultForAccident = false;
     }
     
   } 

@@ -129,8 +129,8 @@ let third = numberObj.third;
 let second = numberObj.second;
 
 function largeNumbers(first, second, third){
-  let smallest = Math.min(first, second, third);
-  return smallest
+  return Math.min(first, second, third);
+  
 }
 
 ////////// PROBLEM 6 //////////
@@ -148,8 +148,9 @@ let obj2 = {
   c: [10, 14, 29, 15, 3]
 }
 
-function numberGroups(){
-for(i=0; i<obj2.length; i++)
-
+function numberGroups(obj2){
+  return Math.max(obj2.a.length, obj2.b.length, obj2.c.length)
 }
+
+
 
